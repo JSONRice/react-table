@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx jest --no-cache --detectOpenHandles --config jest.config.js --coverage",
+    "storybook": "npx cross-env NODE_ENV=development IS_STORYBOOK=true npx start-storybook -p 9901 -c .storybook -s src/app/public",
     "sb": "npm run storybook",
     "snapshot": "npx jest --updateSnapshot"
   },
@@ -61,6 +62,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-test-renderer": "latest",
+    "storybook": "^5.3.19",
     "storybook-addon-jsx": "^7.3.3",
     "unist-util-is": "^4.0.2"
   },
