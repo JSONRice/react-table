@@ -100,20 +100,6 @@ class FirstStoryPage extends Component {
 
     return (
       <Container>
-        <div>
-          <h4>Doctrine and Covenants Sections 1 through 21</h4>
-        </div>
-        <div>
-          <p>
-            The Table component is a bare bones component that simply provides
-            table based API for sorting, filtering, searching, etc. The
-            developer is responsible for supplying a list of data items which is
-            nothing more than an array of objects. Each object element
-            represents a row and every tuple (key-value pair) in the object
-            represents a single cell. The table simply renders the rows and
-            maintains the data set (sorted, filtered, etc.).
-          </p>
-        </div>
         <Table data={data} columnConfiguration={columns} showExpandAll={false} sortEnabled/>
       </Container>
     );

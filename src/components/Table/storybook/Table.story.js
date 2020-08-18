@@ -6,7 +6,7 @@ import ThirdStoryPage from "./ThirdStoryPage";
 import { TableSorting } from "./TableSorting";
 
 storiesOf("Table", module)
-  .add("Default", () => <FirstStoryPage />)
+  .add("Default with column configuration", () => <FirstStoryPage />)
   .add("Multi-level Filtering", () => <SecondStoryPage />)
   .add("Default sorting with custom data types (date)", () => <ThirdStoryPage />)
   .add("Table with links", () => <TableSorting />);
